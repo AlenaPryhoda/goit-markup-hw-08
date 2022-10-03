@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="uk">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Portfolio</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com"/>
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" rel="stylesheet"/>
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./css/main.min.css">
+    </head>
+    <body>
+        <header class="header">
+            <div class="container">
+                <div class="mini-header">
+                    <a href="./index.html" class="logo header__logo">Web<span
+                            class="header__logo--second-part">Studio</span></a>
+                    <button type="button" class="menu-open-btn button">
+                        <svg class="menu-open-btn__icon" width="24" height="16">
+                            <use href="./images/icons.svg#menu-open"></use>
+                        </svg>
+                    </button>
+                </div>
+                <div class="header-menu is-hidden">
+                    <button type="button" class="menu-close-btn">
+                        <svg class="menu-close-btn__icon" width="18.67" height="18.67">
+                            <use href="./images/icons.svg#menu-close"></use>
+                        </svg>
+                    </button>
+                    <nav>
+                        <ul class="site-nav list">
+                            <li class="site-nav__item">
+                                <a href="./index.html" class="site-nav__link">Студія</a>
+                            </li>
+                            <li class="site-nav__item">
+                                <a href="./portfolio.html" class="site-nav__link site-nav__link--current">Портфоліо</a>
+                            </li>
+                            <li class="site-nav__item">
+                                <a href="#contacts-id" class="site-nav__link">Контакти</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="header-bottom-wrapper">
+                        <ul class="header-contacts list">
+                            <li class="header-contacts__item">
+                                <a href="mailto:info@devstudio.com" class="contacts__link email">
+                                    <svg class="email__icon email__icon--desktop" width="16" height="12">
+                                        <use href="./images/icons.svg#envelope"></use>
+                                    </svg>
+                                    <svg class="email__icon email__icon--tablet" width="14" height="10">
+                                        <use href="./images/icons.svg#envelope-tablet"></use>
+                                    </svg>
+                                    info@devstudio.com</a>
+                            </li>
+                            <li class="header-contacts__item">
+                                <a href="tel:+380961111111" class="contacts__link phone">
+                                    <svg class="phone__icon phone__icon--desktop" width="10" height="16">
+                                        <use href="./images/icons.svg#smartphone"></use>
+                                    </svg>
+                                    <svg class="phone__icon phone__icon--tablet" width="10" height="14">
+                                        <use href="./images/icons.svg#smartphone-tablet"></use>
+                                    </svg>
+                                    +38 096 111 11 11</a>
+                            </li>
+                        </ul>
+                        <ul class="header-socials list">
+                            <li class="header-socials__item">
+                                <a href="" class="header-socials__link">Instagram</a>
+                            </li>
+                            <li class="header-socials__item">
+                                <a href="" class="header-socials__link">Twitter</a>
+                            </li>
+                            <li class="header-socials__item">
+                                <a href="" class="header-socials__link">Facebook</a>
+                            </li>
+                            <li class="header-socials__item">
+                                <a href="" class="header-socials__link">LinkedIn</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main>
+            <section class="portfolio">
+                <div class="container">
+                    <h1 class="visually-hidden"></h1>
+                    <ul class="portfolio__nav list">
+                        <li class="portfolio__nav-item">
+                            <button type="button" class="portfolio__button button portfolio__button--current">
+                                Усі
+                            </button>
+                        </li>
+                        <li class="portfolio__nav-item">
+                            <button type="button" class="portfolio__button button">Веб-сайти</button>
+                        </li>
+                        <li class="portfolio__nav-item">
+                            <button type="button" class="portfolio__button button">Додатки</button>
+                        </li>
+                        <li class="portfolio__nav-item">
+                            <button type="button" class="portfolio__button button">Дизайн</button>
+                        </li>
+                        <li class="portfolio__nav-item">
+                            <button type="button" class="portfolio__button button">Маркетинг</button>
+                        </li>
+                    </ul>
+                    <ul class="portfolio__projects list projects">
+                        <li class="projects__item">
+                            <a href="" class="projects__link">
+                                <div class="projects__figure">
+                                    <picture>
+                                        <source srcset="./images/1_desktop@1.jpg 1x, ./images/1_desktop@2.jpg 2x"
+                                            media="(min-width: 1200px)" type="image/jpeg" />
+                                        <source srcset="./images/techno-tablet@1.jpg 1x, ./images/techno-tablet@2.jpg 2x"
+                                            media="(min-width: 768px)" type="image/jpeg" />
+                                        <source srcset="./images/techno-mobile@1.jpg 1x, ./images/techno-mobile@2.jpg 2x"
+                                            type="image/jpeg" />
+                                        <img src="./images/techno-mobile@1.jpg" alt="Технокряк" />
+                                    </picture>
+                                    <div class="projects__description-wrapper">
+                                        <p class="projects__description">
+                                            Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати
+                                            вичерпні відомості про компанію чи приватну особу.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="projects__caption">
+                                    <h2 class="projects__title">Технокряк</h2>
+                                    <p class="projects__category">Веб-сайт</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="projects__item">
+                            <a href="" class="projects__link">
+                                <div class="projects__figure">
+                                    <picture>
+                                        <source srcset="./images/2_desktop@1.jpg 1x, ./images/2_desktop@2.jpg 2x"
+                                            media="(min-width: 1200px)" type="image/jpeg" />
+                                        <source srcset="./images/poster-tablet@1.jpg 1x, ./images/poster-tablet@2.jpg 2x"
+                                            media="(min-width: 768px)" type="image/jpeg" />
+                                        <source srcset="./images/poster-mobile@1.jpg 1x, ./images/poster-mobile@2.jpg 2x"
+                                            type="image/jpeg" />
+                                        <img src="./images/poster-mobile@1.jpg" alt="Постер New Orlean vs Golden Star" />
+                                    </picture>
+                                    <div class="projects__description-wrapper">
+                                        <p class="projects__description">
+                                            Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати
+                                            вичерпні відомості про компанію чи приватну особу.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="projects__caption">
+                                    <h2 class="projects__title">
+                                        Постер <span lang="en">New Orlean vs Golden Star</span>
+                                    </h2>
+                                    <p class="projects__category">Дизайн</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="projects__item">
+                            <a href="" class="projects__link">
+                                <div class="projects__figure">
+                                    <picture>
+                                        <source srcset="./images/3_desktop@1.jpg 1x, ./images/3_desktop@2.jpg 2x"
+                                            media="(min-width: 1200px)" type="image/jpeg" />
+                                        <source srcset="./images/seafood-tablet@1.jpg 1x, ./images/seafood-tablet@2.jpg 2x"
+                                            media="(min-width: 768px)" type="image/jpeg" />
+                                        <source srcset="./images/seafood-mobile@1.jpg 1x, ./images/seafood-mobile@2.jpg 2x"
+                                            type="image/jpeg" />
+                                        <img src="./images/seafood-mobile@1.jpg" alt="Ресторан Seafood" />
+                                    </picture>
+                                    <div class="projects__description-wrapper">
+                                        <p class="projects__description">
+                                            Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати
+                                            вичерпні відомості про компанію чи приватну особу.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="projects__caption">
+                                    <h2 class="projects__title">Ресторан <span lang="en">Seafood</span></h2>
+                                    <p class="projects__category">Додаток</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="projects__item">
+                            <a href="" class="projects__link">
+                                <div class="projects__figure">
+                                    <picture>
+                                        <source srcset="./images/4_desktop@1.jpg 1x, ./images/4_desktop@2.jpg 2x"
+                                            media="(min-width: 1200px)" type="image/jpeg" />
+                                        <source srcset="./images/prime-tablet@1.jpg 1x, ./images/prime-tablet@2.jpg 2x"
+                                            media="(min-width: 768px)" type="image/jpeg" />
+                                        <source srcset="./images/prime-mobile@1.jpg 1x, ./images/prime-mobile@2.jpg 2x"
+                                            type="image/jpeg" />
+                                        <img src="./images/prime-mobile@1.jpg" alt="Проект Prime" />
+                                    </picture>
+                                    <div class="projects__description-wrapper">
+                                        <p class="projects__description">
+                                            Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати
+                                            вичерпні відомості про компанію чи приватну особу.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="projects__caption">
+                                    <h2 class="projects__title">Проект <span lang="en">Prime</span></h2>
+                                    <p class="projects__category">Маркетинг</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="projects__item">
+                            <a href="" class="projects__link">
+                                <div class="projects__figure">
+                                    <picture>
+                                        <source srcset="./images/5_desktop@1.jpg 1x, ./images/5_desktop@2.jpg 2x"
+                                            media="(min-width: 1200px)" type="image/jpeg" />
+                                        <source srcset="./images/boxes-tablet@1.jpg 1x, ./images/boxes-tablet@2.jpg 2x"
+                                            media="(min-width: 768px)" type="image/jpeg" />
+                                        <source srcset="./images/boxes-mobile@1.jpg 1x, ./images/boxes-mobile@2.jpg 2x"
+                                            type="image/jpeg" />
+                                        <img src="./images/boxes-mobile@1.jpg" alt="Проект Boxes" />
+                                    </picture>
+                                    <div class="projects__description-wrapper">
+                                        <p class="projects__description">
+                                        Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати
+                                        вичерпні відомості про компанію чи приватну особу.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="projects__caption">
+                                    <h2 class="projects__title">Проект <span lang="en">Boxes</span></h2>
+                                    <p class="projects__category">Додаток</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="projects__item">
+                            <a href="" class="projects__link">
+                                <div class="projects__figure">
+                                    <picture>
+                                        <source srcset="./images/6_desktop@1.jpg 1x, ./images/6_desktop@2.jpg 2x"
+                                            media="(min-width: 1200px)" type="image/jpeg" />
+                                        <source srcset="./images/inspiration-tablet@1.jpg 1x, ./images/inspiration-tablet@2.jpg 2x"
+                                            media="(min-width: 768px)" type="image/jpeg" />
+                                        <source srcset="./images/inspiration-mobile@1.jpg 1x, ./images/inspiration-mobile@2.jpg 2x"
+                                            type="image/jpeg" />
+                                        <img src="./images/inspiration-mobile@1.jpg" alt="Inspiration has no Borders" />
+                                    </picture>
+                                    <div class="projects__description-wrapper">
+                                        <p class="projects__description">
+                                            Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати
+                                            вичерпні відомості про компанію чи приватну особу.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="projects__caption">
+                                    <h2 class="projects__title" lang="en">Inspiration has no Borders</h2>
+                                    <p class="projects__category">Веб-сайт</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="projects__item">
+                            <a href="" class="projects__link">
+                                <div class="projects__figure">
+                                    <picture>
+                                        <source srcset="./images/7_desktop@1.jpg 1x, ./images/7_desktop@2.jpg 2x"
+                                            media="(min-width: 1200px)" type="image/jpeg" />
+                                        <source srcset="./images/limited-tablet@1.jpg 1x, ./images/limited-tablet@2.jpg 2x"
+                                            media="(min-width: 768px)" type="image/jpeg" />
+                                        <source srcset="./images/limited-mobile@1.jpg 1x, ./images/limited-mobile@2.jpg 2x"
+                                            type="image/jpeg" />
+                                        <img src="./images/limited-mobile@1.jpg" alt="Издание Limited Edition" />
+                                    </picture>
+                                    <div class="projects__description-wrapper">
+                                        <p class="projects__description">
+                                            Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати
+                                            вичерпні відомості про компанію чи приватну особу.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="projects__caption">
+                                    <h2 class="projects__title">Издание <span lang="en">Limited Edition</span></h2>
+                                    <p class="projects__category">Дизайн</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="projects__item">
+                            <a href="" class="projects__link">
+                                <div class="projects__figure">
+                                    <picture>
+                                        <source srcset="./images/8_desktop@1.jpg 1x, ./images/8_desktop@2.jpg 2x"
+                                            media="(min-width: 1200px)" type="image/jpeg" />
+                                        <source srcset="./images/lab-tablet@1.jpg 1x, ./images/lab-tablet@2.jpg 2x"
+                                            media="(min-width: 768px)" type="image/jpeg" />
+                                        <source srcset="./images/lab-mobile@1.jpg 1x, ./images/lab-mobile@2.jpg 2x"
+                                            type="image/jpeg" />
+                                        <img src="./images/lab-mobile@1.jpg" alt="Проект LAB" />
+                                    </picture>
+                                    <div class="projects__description-wrapper">
+                                        <p class="projects__description">
+                                            Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати
+                                            вичерпні відомості про компанію чи приватну особу.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="projects__caption">
+                                    <h2 class="projects__title">Проект <span lang="en">LAB</span></h2>
+                                    <p class="projects__category">Маркетинг</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="projects__item">
+                            <a href="" class="projects__link">
+                                <div class="projects__figure">
+                                    <picture>
+                                        <source srcset="./images/9_desktop@1.jpg 1x, ./images/9_desktop@2.jpg 2x"
+                                            media="(min-width: 1200px)" type="image/jpeg" />
+                                        <source srcset="./images/growing-tablet@1.jpg 1x, ./images/growing-tablet@2.jpg 2x"
+                                            media="(min-width: 768px)" type="image/jpeg" />
+                                        <source srcset="./images/growing-mobile@1.jpg 1x, ./images/growing-mobile@2.jpg 2x"
+                                            type="image/jpeg" />
+                                        <img src="./images/growing-mobile@1.jpg" alt="Growing Business" />
+                                    </picture>
+                                    <div class="projects__description-wrapper">
+                                        <p class="projects__description">
+                                            Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати
+                                            вичерпні відомості про компанію чи приватну особу.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="projects__caption">
+                                    <h2 class="projects__title" lang="en">Growing Business</h2>
+                                    <p class="projects__category">Додаток</p>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="container">
+                <div class="address-join-wrapper">
+                    <div class="address-wrapper" id="contacts-id">
+                        <a href="./index.html" class="logo footer__logo">Web<span
+                                class="footer__logo--second-part">Studio</span></a>
+                        <address class="address">
+                            <p class="address__location">м.Київ, пр-т Лесі Українки, 26</p>
+                            <ul class="footer-contacts list">
+                                <li class="footer-contacts__item">
+                                    <a href="maialto:info@example.com" class="footer-contacts__link">info@example.com</a>
+                                </li>
+                                <li class="footer-contacts__item">
+                                    <a href="tel:+380991111111" class="footer-contacts__link">+38 099 111 11 11</a>
+                                </li>
+                            </ul>
+                        </address>
+                    </div>
+                    <div class="join">
+                        <strong class="join__title">Приєднуйтесь</strong>
+                        <ul class="socials list">
+                            <li class="socials__item">
+                                <a href="" class="socials__link">
+                                    <svg class="socials__icon" width="20" height="20">
+                                        <use href="./images/icons.svg#instagram"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="socials__item">
+                                <a href="" class="socials__link">
+                                    <svg class="socials__icon" width="20" height="20">
+                                        <use href="./images/icons.svg#twitter"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="socials__item">
+                                <a href="" class="socials__link">
+                                    <svg class="socials__icon" width="20" height="20">
+                                        <use href="./images/icons.svg#facebook"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="socials__item">
+                                <a href="" class="socials__link">
+                                    <svg class="socials__icon" width="20" height="20">
+                                        <use href="./images/icons.svg#linkedin"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="subscribe">
+                    <strong class="subscribe__title">Підпишіться на розсилку</strong>
+                    <form class="subscribe__form">
+                        <label class="subscribe__label"><input type="email" name="email" placeholder="E-mail"
+                                class="subscribe__input" /></label><button class="subscribe__button button">
+                            Підписатися
+                            <svg class="subscribe__icon" width="24" height="24">
+                                <use href="./images/icons.svg#send"></use>
+                            </svg>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </footer>
+        <script src="./js/menu.js"></script>
+    </body>
+    
+    </html>

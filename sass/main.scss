@@ -1,0 +1,15 @@
+@import './utils/vars';
+@import './utils/general';
+
+@import './components/header';
+@import './components/footer';
+
+@import './components/index/hero';
+@import './components/index/gallery';
+@import './components/index/modal';
+@import './components/index/about';
+@import './components/index/team';
+@import './components/index/clients';
+
+@import './components/portfolio/portfolio-navigation';
+@import './components/portfolio/portfolio-projects';
